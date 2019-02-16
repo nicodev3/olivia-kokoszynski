@@ -60,3 +60,43 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+ body {
+  font-family: 'Crimson Text', serif;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+ 	font-family: 'Julius Sans One', sans-serif;
+  font-weight: 400;
+ }
+
+ p {
+  line-height: 1.25;
+ }
+
+@media (min-width: 1000px) {
+    .lh-4rem {
+        line-height: 4rem;
+    }
+
+    .lh-1-5rem {
+        line-height: 1.5rem !important;
+    }
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+

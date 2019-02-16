@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <title>{{ $.Site.Title }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One" rel="stylesheet">
 
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
@@ -13,11 +14,13 @@
   {{ end }}
 </head>
 
-<body>
+<body class="Site">
 
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
-  {{ block "main" . }}{{end}}
+  <div class="container mx-auto mt-4 Site-content">
+      {{ block "main" . }}{{end}}
+  </div>
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 

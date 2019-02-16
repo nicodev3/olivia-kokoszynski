@@ -169,8 +169,8 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'lg': '1000px',
+    'xl': '1400px',
   },
 
 
@@ -893,7 +893,7 @@ module.exports = {
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: [],
-    borderColors: ['responsive', 'hover', 'focus'],
+    borderColors: ['responsive', 'hover', 'focus', 'group-hover'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidths: ['responsive'],
@@ -901,7 +901,7 @@ module.exports = {
     display: ['responsive'],
     flexbox: ['responsive'],
     float: ['responsive'],
-    fonts: ['responsive'],
+    fonts: false,
     fontWeights: ['responsive', 'hover', 'focus'],
     height: ['responsive'],
     leading: ['responsive'],
@@ -932,7 +932,7 @@ module.exports = {
     tracking: ['responsive'],
     userSelect: ['responsive'],
     verticalAlign: ['responsive'],
-    visibility: ['responsive'],
+    visibility: ['responsive', 'group-hover'],
     whitespace: ['responsive'],
     width: ['responsive'],
     zIndex: ['responsive'],
