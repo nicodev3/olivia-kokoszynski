@@ -12,8 +12,6 @@
 		</header>
 		{{ .Content }}
 	</main>
-	<aside class="w-full lg:w-1/3 pl-24 bg-grey-light ">
-		<h1 class="text-lg">Contenus sidebar</h1>
-	</aside>
+	{{ partial "aside.html" . }}
 </div>
 {{ end }}

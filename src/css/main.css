@@ -75,8 +75,31 @@
   font-weight: 400;
  }
 
+ h1 {
+   margin-bottom: 2rem;
+ }
+
+ h2 {
+   margin: 1.5rem 0 1.25rem;
+ }
+
  p {
   line-height: 1.25;
+  margin-bottom: 1rem;
+ }
+
+ ul {
+   margin-bottom: 1rem;
+ }
+
+ ul li {
+   line-height: 1.45;
+ }
+
+ blockquote {
+   padding-left: 1.5rem;
+   border-left: 15px solid #eee;
+   font-style: italic;
  }
 
 @media (min-width: 1000px) {
